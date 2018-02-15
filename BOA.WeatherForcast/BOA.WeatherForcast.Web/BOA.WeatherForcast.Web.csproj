@@ -23,4 +23,8 @@
     <ProjectReference Include="..\BOA.WeatherForecast.Domain\BOA.WeatherForecast.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Forecast\" />
+  </ItemGroup>
+
 </Project>

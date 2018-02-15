@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOA.WeatherForecast.Data", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOA.WeatherForecast.Domain", "BOA.WeatherForecast.Domain\BOA.WeatherForecast.Domain.csproj", "{A6C70FB5-752F-4430-8824-B20F0FCD46AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FAEEA7D8-2A36-4CA4-A74D-AAEF5B653C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOA.Weatherforecast.Web.Tests", "BOA.Weatherforecast.Web.Tests\BOA.Weatherforecast.Web.Tests.csproj", "{DEEFA47C-8687-42A1-A950-A4FBBA0A1914}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{A6C70FB5-752F-4430-8824-B20F0FCD46AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C70FB5-752F-4430-8824-B20F0FCD46AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6C70FB5-752F-4430-8824-B20F0FCD46AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEFA47C-8687-42A1-A950-A4FBBA0A1914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEFA47C-8687-42A1-A950-A4FBBA0A1914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEFA47C-8687-42A1-A950-A4FBBA0A1914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEFA47C-8687-42A1-A950-A4FBBA0A1914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DEEFA47C-8687-42A1-A950-A4FBBA0A1914} = {FAEEA7D8-2A36-4CA4-A74D-AAEF5B653C40}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8CCCAF3-5624-433F-AC4A-FFF871787E5E}

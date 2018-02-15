@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using AutoMapper;
 using BOA.WeatherForcast.Web.ViewModels;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace BOA.WeatherForcast.Web.Services

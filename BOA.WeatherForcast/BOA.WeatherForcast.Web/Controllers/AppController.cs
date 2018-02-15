@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using BOA.WeatherForcast.Web.ViewModels;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
 namespace BOA.WeatherForcast.Web.Controllers
 {

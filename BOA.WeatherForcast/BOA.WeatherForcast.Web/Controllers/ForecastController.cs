@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
-using AutoMapper;
 using BOA.WeatherForcast.Web.Services;
-using BOA.WeatherForcast.Web.ViewModels;
-using BOA.WeatherForecast.Data;
-using BOA.WeatherForecast.Data.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
 namespace BOA.WeatherForcast.Web.Controllers
 {
@@ -47,7 +38,7 @@ namespace BOA.WeatherForcast.Web.Controllers
         {
             try
             {
-                    return Ok(await _forecastService.GetWeatherForecast(id));
+                return Ok(await _forecastService.GetWeatherForecast(id));
             }
             catch (Exception ex)
             {
