@@ -11,3 +11,8 @@ BOA.WeatherForcast/BOA.WeatherForecast.Domain/bin/
 BOA.WeatherForcast/BOA.WeatherForecast.Domain/obj/
 BOA.WeatherForcast/BOA.Weatherforecast.Web.Tests/bin/
 BOA.WeatherForcast/BOA.Weatherforecast.Web.Tests/obj/
+BOA.WeatherForcast/BOA.WeaterForecast.Web.Xunit.Test/obj/
+BOA.WeatherForcast/BOA.WeatherForecast.Web.Test/bin/
+BOA.WeatherForcast/BOA.WeatherForecast.Web.Test/obj/BOA.WeatherForecast.Web.Test.csproj.nuget.cache
+BOA.WeatherForcast/BOA.WeatherForecast.Web.Test/obj/
+BOA.WeatherForcast/BOA.WeaterForecast.Web.Xunit.Test/
