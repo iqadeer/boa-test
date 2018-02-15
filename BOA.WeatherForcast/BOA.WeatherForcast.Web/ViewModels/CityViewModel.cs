@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
+namespace BOA.WeatherForcast.Web.ViewModels
+{
+    public class CityViewModel
+    {
+        [Required]
+        [DisplayName("Select city to see forecast")]
+        public string Id { get; set; }
+        
+        public List<SelectListItem> ListofCities { get; set; }
+    }
+}

@@ -4,3 +4,4 @@ BOA.WeatherForcast/BOA.WeatherForcast.Web/bower_components/
 BOA.WeatherForcast/BOA.WeatherForcast.Web/bin/
 BOA.WeatherForcast/.vs/
 .vs/
+BOA.WeatherForcast/BOA.WeatherForcast.Web/Data/city.list.json
