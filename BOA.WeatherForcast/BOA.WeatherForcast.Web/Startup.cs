@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using BOA.WeatherForcast.Web.Services;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
 using Microsoft.AspNetCore.Builder;
@@ -21,6 +22,7 @@ namespace BOA.WeatherForcast.Web
             services.AddAutoMapper();
             services.AddMvc();
             services.AddScoped<IRepository<City>, CityRepository>();
+            services.AddScoped<IForecastService, ForecastService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
