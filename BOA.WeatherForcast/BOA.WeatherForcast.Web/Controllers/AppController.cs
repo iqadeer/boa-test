@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BOA.WeatherForcast.Web.Models;
+using BOA.WeatherForcast.Web.Services;
 using BOA.WeatherForcast.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -19,11 +20,13 @@ namespace BOA.WeatherForcast.Web.Controllers
     {
         private readonly IMapper _mapper;
         private readonly ILogger<AppController> _logger;
+        private readonly IRepository<City> _repository;
 
-        public AppController(IMapper mapper, ILogger<AppController> logger)
+        public AppController(IMapper mapper, ILogger<AppController> logger, IRepository<City> repository)
         {
             _mapper = mapper;
             _logger = logger;
+            _repository = repository;
         }
 
         [HttpGet]
@@ -32,14 +35,9 @@ namespace BOA.WeatherForcast.Web.Controllers
             //throw new InvalidOperationException();
             using (StreamReader r = new StreamReader("Data/city.list.json"))
             {
-                string json = r.ReadToEnd();
-                var items = JsonConvert.DeserializeObject<List<City>>(json);
-                var ukCities = items.Where(c => c.Country == "GB").Distinct().Take(10).ToList();
-
-
-                //var cities = _mapper.Map<IEnumerable<City>, IEnumerable<CityViewModel>>(ukCities);
+                var cities = _repository.GetEntities();
                 var selectList = new List<SelectListItem>();
-                foreach (var item in ukCities)
+                foreach (var item in cities)
                 {
                     selectList.Add(new SelectListItem{Text = item.Name, Value = item.Id});
                 }
