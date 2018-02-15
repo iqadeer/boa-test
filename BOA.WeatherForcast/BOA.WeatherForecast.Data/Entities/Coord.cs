@@ -1,4 +1,4 @@
-﻿namespace BOA.WeatherForcast.Web.Models
+﻿namespace BOA.WeatherForecast.Data.Entities
 {
     public class Coord
     {

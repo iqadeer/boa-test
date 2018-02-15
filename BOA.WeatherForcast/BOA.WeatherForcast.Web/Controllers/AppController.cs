@@ -5,9 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using BOA.WeatherForcast.Web.Models;
-using BOA.WeatherForcast.Web.Services;
 using BOA.WeatherForcast.Web.ViewModels;
+using BOA.WeatherForecast.Data;
+using BOA.WeatherForecast.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -32,10 +32,7 @@ namespace BOA.WeatherForcast.Web.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            //throw new InvalidOperationException();
-            using (StreamReader r = new StreamReader("Data/city.list.json"))
-            {
-                var cities = _repository.GetEntities();
+                var cities = _repository.Get();
                 var selectList = new List<SelectListItem>();
                 foreach (var item in cities)
                 {
@@ -48,7 +45,6 @@ namespace BOA.WeatherForcast.Web.Controllers
                 };
 
                 return View(vm);
-            }
         }
 
         [HttpPost]

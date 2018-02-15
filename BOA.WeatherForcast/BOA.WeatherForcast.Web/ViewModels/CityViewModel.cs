@@ -13,7 +13,8 @@ namespace BOA.WeatherForcast.Web.ViewModels
         [Required]
         [DisplayName("Select city to see forecast")]
         public string Id { get; set; }
-        
+
+        public string NameOfCity { get; set; }
         public List<SelectListItem> ListofCities { get; set; }
     }
 }

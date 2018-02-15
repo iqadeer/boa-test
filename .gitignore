@@ -5,3 +5,7 @@ BOA.WeatherForcast/BOA.WeatherForcast.Web/bin/
 BOA.WeatherForcast/.vs/
 .vs/
 BOA.WeatherForcast/BOA.WeatherForcast.Web/Data/city.list.json
+BOA.WeatherForcast/BOA.WeatherForecast.Data/bin/
+BOA.WeatherForcast/BOA.WeatherForecast.Data/obj/
+BOA.WeatherForcast/BOA.WeatherForecast.Domain/bin/
+BOA.WeatherForcast/BOA.WeatherForecast.Domain/obj/

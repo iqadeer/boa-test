@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOA.WeatherForcast.Web", "BOA.WeatherForcast.Web\BOA.WeatherForcast.Web.csproj", "{C6638048-1493-42D5-8508-EA64AE1C1182}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOA.WeatherForcast.Web", "BOA.WeatherForcast.Web\BOA.WeatherForcast.Web.csproj", "{C6638048-1493-42D5-8508-EA64AE1C1182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOA.WeatherForecast.Data", "BOA.WeatherForecast.Data\BOA.WeatherForecast.Data.csproj", "{9BB9729D-46A4-4256-A710-91FACFA4022A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOA.WeatherForecast.Domain", "BOA.WeatherForecast.Domain\BOA.WeatherForecast.Domain.csproj", "{A6C70FB5-752F-4430-8824-B20F0FCD46AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C6638048-1493-42D5-8508-EA64AE1C1182}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6638048-1493-42D5-8508-EA64AE1C1182}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6638048-1493-42D5-8508-EA64AE1C1182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB9729D-46A4-4256-A710-91FACFA4022A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB9729D-46A4-4256-A710-91FACFA4022A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB9729D-46A4-4256-A710-91FACFA4022A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB9729D-46A4-4256-A710-91FACFA4022A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C70FB5-752F-4430-8824-B20F0FCD46AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C70FB5-752F-4430-8824-B20F0FCD46AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C70FB5-752F-4430-8824-B20F0FCD46AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C70FB5-752F-4430-8824-B20F0FCD46AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

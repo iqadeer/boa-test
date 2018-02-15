@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace BOA.WeatherForcast.Web.Models
+﻿namespace BOA.WeatherForecast.Data.Entities
 {
     public class City
         {
