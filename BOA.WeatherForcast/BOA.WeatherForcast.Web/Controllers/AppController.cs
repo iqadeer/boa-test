@@ -23,9 +23,9 @@ namespace BOA.WeatherForcast.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string country)
         {
-                var cities = _repository.Get();
+                var cities = _repository.Get(country ?? "GB");
                 var selectList = new List<SelectListItem>();
                 foreach (var item in cities)
                 {

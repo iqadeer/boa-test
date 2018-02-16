@@ -16,16 +16,13 @@ namespace BOA.WeatherForecast.Data
         {
             _logger = logger;
         }
-        public IEnumerable<City> Get()
+        public IEnumerable<City> Get(string country = "GB")
         {
             try
             {
-                using (var r = new StreamReader("Data/city.list.json"))
-                {
-                    var json = r.ReadToEnd();
-                    var items = JsonConvert.DeserializeObject<List<City>>(json);
-                    return items.Where(c => c.Country == "GB").Distinct().Take(10).ToList();
-                }
+//                return WriteShortListedFileAndReturnShortListOfCities(country);
+                return ShortListedCities(country);
+
             }
             catch (Exception ex)
             {
@@ -34,5 +31,39 @@ namespace BOA.WeatherForecast.Data
                 return null;
             }
         }
+
+        private IEnumerable<City> WriteShortListedFileAndReturnShortListOfCities(string country)
+        {
+            using (var r = new StreamReader("Data/city.list.json"))
+            {
+                var json = r.ReadToEnd();
+                var items = JsonConvert.DeserializeObject<List<City>>(json);
+
+                var shortListOfCities = items.Where(c => c.Country == country).Distinct().Take(5).ToList();
+                shortListOfCities.Add(items.FirstOrDefault(c => c.Country == country && c.Name.ToLowerInvariant() == "london"));
+                shortListOfCities.Add(items.FirstOrDefault(c => c.Country == country && c.Name.ToLowerInvariant() == "reading"));
+                shortListOfCities.Add(items.FirstOrDefault(c => c.Country == country && c.Name.ToLowerInvariant() == "manchester"));
+                shortListOfCities.Add(items.FirstOrDefault(c => c.Country == country && c.Name.ToLowerInvariant() == "birmingham"));
+                shortListOfCities.Add(items.FirstOrDefault(c => c.Country == country && c.Name.ToLowerInvariant() == "bristol"));
+                shortListOfCities.Add(items.FirstOrDefault(c => c.Country == country && c.Name.ToLowerInvariant() == "leeds"));
+                shortListOfCities.Add(items.FirstOrDefault(c => c.Country == country && c.Name.ToLowerInvariant() == "oxford"));
+
+                var serializedShortList = JsonConvert.SerializeObject(shortListOfCities);
+                File.WriteAllText("Data/short.city.list.json", serializedShortList);
+
+                return ShortListedCities(country);
+            }
+        }
+
+        private IEnumerable<City> ShortListedCities(string country)
+        {
+            using (var r = new StreamReader("Data/short.city.list.json"))
+            {
+                var json = r.ReadToEnd();
+                var items = JsonConvert.DeserializeObject<List<City>>(json);
+                return items.Where(c => c.Country == country).Distinct().ToList();
+            }
+        }
+
     }
 }

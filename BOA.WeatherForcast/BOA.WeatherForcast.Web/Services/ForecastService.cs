@@ -22,7 +22,7 @@ namespace BOA.WeatherForcast.Web.Services
 
         public IEnumerable<CityViewModel> GetCities(string country)
         {
-                return _mapper.Map<IEnumerable<City>, IEnumerable<CityViewModel>>(_repository.Get());
+                return _mapper.Map<IEnumerable<City>, IEnumerable<CityViewModel>>(_repository.Get(country));
         }
 
         public async Task<WeatherForecast.Domain.WeatherForecast> GetWeatherForecast(int id)
