@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Net.Http;
+using AutoMapper;
 using BOA.WeatherForcast.Web.Services;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
@@ -17,7 +18,9 @@ namespace BOA.WeatherForcast.Web
             services.AddAutoMapper();
             services.AddMvc();
             services.AddScoped<IRepository<City>, CityRepository>();
-            services.AddScoped<IForecastService, ForecastService>();
+            services.AddTransient<IForecastService, ForecastService>();
+            services.AddTransient<HttpClient>();
+            services.AddTransient<IHttpClientWrapper, HttpClientWrapper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

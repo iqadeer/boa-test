@@ -52,5 +52,15 @@ namespace BOA.WeatherForcast.Web.Controllers
             _logger.LogError($"Error getting cities for the file, Error: {ex.Message} Exception type: {ex.GetType()}.");
         }
 
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                _forecastService?.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+
     }
 }

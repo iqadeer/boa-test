@@ -2,7 +2,7 @@
 using BOA.WeatherForcast.Web.ViewModels;
 using BOA.WeatherForecast.Data.Entities;
 
-namespace BOA.WeatherForcast.Web.Data
+namespace BOA.WeatherForcast.Web
 {
     public class MappingProfile : Profile
     {
