@@ -7,6 +7,7 @@ using BOA.WeatherForcast.Web.ViewModels;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 
 namespace BOA.WeatherForcast.Web.Services
@@ -33,15 +34,15 @@ namespace BOA.WeatherForcast.Web.Services
 
         public async Task<WeatherForecast.Domain.WeatherForecast> GetWeatherForecast(int id)
         {
-            //$"{_configuration["WeatherServiceBaseUrl"]}?id={id}&units={}"
-            var path = $"http://api.openweathermap.org/data/2.5/forecast?id={id}&units=metric&appid=d958826a9d8f775f24dbeddcf2838369";
-                var response = await _client.GetAsync(path);
+            var baseUrl = _configuration.GetValue<string>("WeatherServiceBaseUrl"); 
+            var apiKey = _configuration.GetValue<string>("AppId"); 
+            var units = _configuration.GetValue<string>("Units");
+            var clientUrl = $"{baseUrl}?id={id}&units={units}&appid={apiKey}";
+                var response = await _client.GetAsync(clientUrl);
                 response.EnsureSuccessStatusCode();
                 var contentString = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<WeatherForecast.Domain.WeatherForecast>(contentString);
 
-//            "WeatherServiceBaseUrl": "http://api.openweathermap.org/data/2.5/forecast",
-  //          "AppId": "d958826a9d8f775f24dbeddcf2838369"
 
         }
 
