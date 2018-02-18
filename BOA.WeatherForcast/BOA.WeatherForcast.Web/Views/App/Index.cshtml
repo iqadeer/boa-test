@@ -4,7 +4,21 @@
 
 @model CityViewModel
 
+@section scripts
+    {
+    <script src="~/ClientWeatherForecastApp/dist/inline.bundle.js"></script>
+    <script src="~/ClientWeatherForecastApp/dist/polyfills.bundle.js"></script>
+    <script src="~/ClientWeatherForecastApp/dist/styles.bundle.js"></script>
+    <script src="~/ClientWeatherForecastApp/dist/vendor.bundle.js"></script>
+    <script src="~/ClientWeatherForecastApp/dist/main.bundle.js"></script>
+}
 <h2>This is home page</h2>
+
+<forecast-app></forecast-app>
+
+<h2>app ends here</h2>
+
+
 <form method="post" asp-controller="App" asp-action="Index" asp-antiforgery="true">
     <div class="from-group">
         <label asp-for="Id"></label>
@@ -12,7 +26,7 @@
             <option disabled selected value="">Select a Country</option>
         </select>
     </div>
-    
+
     <button type="submit">Get weather</button>
 
 </form>

@@ -1,0 +1,394 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\Node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.3.4
+3 info using node@v5.4.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @angular/animations
+20 silly mapToRegistry name @angular/animations
+21 silly mapToRegistry scope (from package name) @angular
+22 verbose mapToRegistry no registry URL found in name for scope @angular
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fanimations
+26 silly fetchNamedPackageData @angular/common
+27 silly mapToRegistry name @angular/common
+28 silly mapToRegistry scope (from package name) @angular
+29 verbose mapToRegistry no registry URL found in name for scope @angular
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcommon
+33 silly fetchNamedPackageData @angular/compiler
+34 silly mapToRegistry name @angular/compiler
+35 silly mapToRegistry scope (from package name) @angular
+36 verbose mapToRegistry no registry URL found in name for scope @angular
+37 silly mapToRegistry using default registry
+38 silly mapToRegistry registry https://registry.npmjs.org/
+39 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcompiler
+40 silly fetchNamedPackageData @angular/core
+41 silly mapToRegistry name @angular/core
+42 silly mapToRegistry scope (from package name) @angular
+43 verbose mapToRegistry no registry URL found in name for scope @angular
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcore
+47 silly fetchNamedPackageData @angular/forms
+48 silly mapToRegistry name @angular/forms
+49 silly mapToRegistry scope (from package name) @angular
+50 verbose mapToRegistry no registry URL found in name for scope @angular
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fforms
+54 silly fetchNamedPackageData @angular/http
+55 silly mapToRegistry name @angular/http
+56 silly mapToRegistry scope (from package name) @angular
+57 verbose mapToRegistry no registry URL found in name for scope @angular
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fhttp
+61 silly fetchNamedPackageData @angular/platform-browser
+62 silly mapToRegistry name @angular/platform-browser
+63 silly mapToRegistry scope (from package name) @angular
+64 verbose mapToRegistry no registry URL found in name for scope @angular
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fplatform-browser
+68 silly fetchNamedPackageData @angular/platform-browser-dynamic
+69 silly mapToRegistry name @angular/platform-browser-dynamic
+70 silly mapToRegistry scope (from package name) @angular
+71 verbose mapToRegistry no registry URL found in name for scope @angular
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+75 silly fetchNamedPackageData @angular/router
+76 silly mapToRegistry name @angular/router
+77 silly mapToRegistry scope (from package name) @angular
+78 verbose mapToRegistry no registry URL found in name for scope @angular
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/@angular%2frouter
+82 silly fetchNamedPackageData core-js
+83 silly mapToRegistry name core-js
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry uri https://registry.npmjs.org/core-js
+87 silly fetchNamedPackageData rxjs
+88 silly mapToRegistry name rxjs
+89 silly mapToRegistry using default registry
+90 silly mapToRegistry registry https://registry.npmjs.org/
+91 silly mapToRegistry uri https://registry.npmjs.org/rxjs
+92 silly fetchNamedPackageData zone.js
+93 silly mapToRegistry name zone.js
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry uri https://registry.npmjs.org/zone.js
+97 verbose request uri https://registry.npmjs.org/@angular%2fanimations
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 11:54:11 PM
+100 verbose request id 3850c4764f73d908
+101 http request GET https://registry.npmjs.org/@angular%2fanimations
+102 verbose request uri https://registry.npmjs.org/@angular%2fcommon
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 11:54:11 PM
+105 http request GET https://registry.npmjs.org/@angular%2fcommon
+106 verbose request uri https://registry.npmjs.org/@angular%2fcompiler
+107 verbose request no auth needed
+108 info attempt registry request try #1 at 11:54:11 PM
+109 http request GET https://registry.npmjs.org/@angular%2fcompiler
+110 verbose request uri https://registry.npmjs.org/@angular%2fcore
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 11:54:11 PM
+113 http request GET https://registry.npmjs.org/@angular%2fcore
+114 verbose request uri https://registry.npmjs.org/@angular%2fforms
+115 verbose request no auth needed
+116 info attempt registry request try #1 at 11:54:11 PM
+117 http request GET https://registry.npmjs.org/@angular%2fforms
+118 verbose request uri https://registry.npmjs.org/@angular%2fhttp
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 11:54:11 PM
+121 http request GET https://registry.npmjs.org/@angular%2fhttp
+122 verbose request uri https://registry.npmjs.org/@angular%2fplatform-browser
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 11:54:11 PM
+125 http request GET https://registry.npmjs.org/@angular%2fplatform-browser
+126 verbose request uri https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+127 verbose request no auth needed
+128 info attempt registry request try #1 at 11:54:11 PM
+129 http request GET https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+130 verbose request uri https://registry.npmjs.org/@angular%2frouter
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 11:54:11 PM
+133 http request GET https://registry.npmjs.org/@angular%2frouter
+134 verbose request uri https://registry.npmjs.org/core-js
+135 verbose request no auth needed
+136 info attempt registry request try #1 at 11:54:11 PM
+137 http request GET https://registry.npmjs.org/core-js
+138 verbose request uri https://registry.npmjs.org/rxjs
+139 verbose request no auth needed
+140 info attempt registry request try #1 at 11:54:11 PM
+141 http request GET https://registry.npmjs.org/rxjs
+142 verbose request uri https://registry.npmjs.org/zone.js
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 11:54:11 PM
+145 http request GET https://registry.npmjs.org/zone.js
+146 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+147 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+148 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+149 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+150 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+151 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+152 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+153 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+154 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+155 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+156 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+157 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+158 info attempt registry request try #2 at 11:54:21 PM
+159 http request GET https://registry.npmjs.org/@angular%2fplatform-browser
+160 info attempt registry request try #2 at 11:54:21 PM
+161 http request GET https://registry.npmjs.org/@angular%2fcore
+162 info attempt registry request try #2 at 11:54:21 PM
+163 http request GET https://registry.npmjs.org/@angular%2fhttp
+164 info attempt registry request try #2 at 11:54:21 PM
+165 http request GET https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+166 info attempt registry request try #2 at 11:54:21 PM
+167 http request GET https://registry.npmjs.org/@angular%2fanimations
+168 info attempt registry request try #2 at 11:54:21 PM
+169 http request GET https://registry.npmjs.org/core-js
+170 info attempt registry request try #2 at 11:54:21 PM
+171 http request GET https://registry.npmjs.org/@angular%2fforms
+172 info attempt registry request try #2 at 11:54:21 PM
+173 http request GET https://registry.npmjs.org/@angular%2frouter
+174 info attempt registry request try #2 at 11:54:21 PM
+175 http request GET https://registry.npmjs.org/@angular%2fcommon
+176 info attempt registry request try #2 at 11:54:21 PM
+177 http request GET https://registry.npmjs.org/rxjs
+178 info attempt registry request try #2 at 11:54:21 PM
+179 http request GET https://registry.npmjs.org/@angular%2fcompiler
+180 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+181 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+182 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+183 info attempt registry request try #2 at 11:54:21 PM
+184 http request GET https://registry.npmjs.org/zone.js
+185 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+186 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+187 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+188 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+189 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+190 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+191 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+192 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+193 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+194 info attempt registry request try #3 at 11:55:21 PM
+195 http request GET https://registry.npmjs.org/@angular%2fplatform-browser
+196 info attempt registry request try #3 at 11:55:21 PM
+197 http request GET https://registry.npmjs.org/@angular%2fcore
+198 info attempt registry request try #3 at 11:55:21 PM
+199 http request GET https://registry.npmjs.org/@angular%2fhttp
+200 info attempt registry request try #3 at 11:55:21 PM
+201 http request GET https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+202 info attempt registry request try #3 at 11:55:21 PM
+203 http request GET https://registry.npmjs.org/@angular%2fanimations
+204 info attempt registry request try #3 at 11:55:21 PM
+205 http request GET https://registry.npmjs.org/@angular%2fforms
+206 info attempt registry request try #3 at 11:55:21 PM
+207 http request GET https://registry.npmjs.org/core-js
+208 info attempt registry request try #3 at 11:55:21 PM
+209 http request GET https://registry.npmjs.org/@angular%2fcommon
+210 info attempt registry request try #3 at 11:55:21 PM
+211 http request GET https://registry.npmjs.org/@angular%2frouter
+212 info attempt registry request try #3 at 11:55:21 PM
+213 http request GET https://registry.npmjs.org/rxjs
+214 info attempt registry request try #3 at 11:55:21 PM
+215 http request GET https://registry.npmjs.org/@angular%2fcompiler
+216 info attempt registry request try #3 at 11:55:21 PM
+217 http request GET https://registry.npmjs.org/zone.js
+218 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+218 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+218 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+218 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+218 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+218 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+218 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+218 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+218 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+218 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+218 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+218 silly fetchPackageMetaData  error for @angular/http@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+219 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+219 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+219 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+219 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+219 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+219 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+219 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+219 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+219 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+219 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+219 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+219 silly fetchPackageMetaData  error for @angular/core@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+220 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+220 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+220 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+220 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+220 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+220 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+220 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+220 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+220 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+220 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+220 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+220 silly fetchPackageMetaData  error for @angular/platform-browser@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+221 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+221 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+221 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+221 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+221 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+221 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+221 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+221 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+221 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+221 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+221 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+221 silly fetchPackageMetaData  error for @angular/animations@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+222 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+222 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+222 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+222 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+222 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+222 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+222 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+222 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+222 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+222 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+222 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+222 silly fetchPackageMetaData  error for @angular/compiler@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+223 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+223 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+223 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+223 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+223 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+223 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+223 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+223 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+223 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+223 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+223 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+223 silly fetchPackageMetaData  error for rxjs@^5.5.6 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+224 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+224 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+224 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+224 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+224 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+224 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+224 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+224 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+224 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+224 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+224 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+224 silly fetchPackageMetaData  error for @angular/platform-browser-dynamic@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+225 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+225 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+225 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+225 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+225 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+225 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+225 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+225 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+225 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+225 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+225 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+225 silly fetchPackageMetaData  error for @angular/forms@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+226 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+226 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+226 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+226 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+226 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+226 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+226 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+226 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+226 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+226 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+226 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+226 silly fetchPackageMetaData  error for core-js@^2.4.1 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+227 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+227 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+227 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+227 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+227 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+227 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+227 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+227 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+227 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+227 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+227 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+227 silly fetchPackageMetaData  error for @angular/common@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+228 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+228 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+228 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+228 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+228 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+228 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+228 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+228 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+228 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+228 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+228 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+228 silly fetchPackageMetaData  error for @angular/router@^5.2.0 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+229 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+229 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+229 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+229 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+229 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+229 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:320:9)
+229 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+229 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+229 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:146:16)
+229 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:110:10)
+229 silly fetchPackageMetaData     at TCP.onread (net.js:523:20)
+229 silly fetchPackageMetaData  error for zone.js@^0.8.19 { [Error: tunneling socket could not be established, cause=Parse Error] code: 'ECONNRESET' }
+230 silly rollbackFailedOptional Starting
+231 silly rollbackFailedOptional Finishing
+232 silly runTopLevelLifecycles Starting
+233 silly runTopLevelLifecycles Finishing
+234 silly install printInstalled
+235 verbose stack Error: tunneling socket could not be established, cause=Parse Error
+235 verbose stack     at ClientRequest.onError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+235 verbose stack     at ClientRequest.g (events.js:260:16)
+235 verbose stack     at emitOne (events.js:77:13)
+235 verbose stack     at ClientRequest.emit (events.js:169:7)
+235 verbose stack     at Socket.socketOnData (_http_client.js:320:9)
+235 verbose stack     at emitOne (events.js:77:13)
+235 verbose stack     at Socket.emit (events.js:169:7)
+235 verbose stack     at readableAddChunk (_stream_readable.js:146:16)
+235 verbose stack     at Socket.Readable.push (_stream_readable.js:110:10)
+235 verbose stack     at TCP.onread (net.js:523:20)
+236 verbose cwd C:\Users\imran.qadeer\Documents\Imran\personal\projects\job-search\BOA\BOA.WeatherForcast\BOA.WeatherForcast.Web
+237 error Windows_NT 10.0.14393
+238 error argv "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\Node.exe" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\node_modules\\npm\\bin\\npm-cli.js" "install"
+239 error node v5.4.1
+240 error npm  v3.3.4
+241 error code ECONNRESET
+242 error network tunneling socket could not be established, cause=Parse Error
+242 error network This is most likely not a problem with npm itself
+242 error network and is related to network connectivity.
+242 error network In most cases you are behind a proxy or have bad network settings.
+242 error network
+242 error network If you are behind a proxy, please make sure that the
+242 error network 'proxy' config is set properly.  See: 'npm help config'
+243 verbose exit [ 1, true ]
