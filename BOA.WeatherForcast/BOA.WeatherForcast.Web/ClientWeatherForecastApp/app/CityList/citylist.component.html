@@ -5,7 +5,7 @@
             <label for="city-list" class="col-sm-3">Please select city from the list <i class="fa fa-globe"></i></label>
             <div class="col-sm-3">
                 <select class="form-control" id="city-list" name="city-list">
-                    <option>London</option>
+                    <option *ngFor="let city of cities" [value]="city.Id">{{city.nameOfCity}}</option>
                 </select>
             </div>
         </div>
