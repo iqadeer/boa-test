@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from "@angular/core";
+﻿import { Component, OnInit, Input } from "@angular/core";
 import { WeatherService } from "../Shared/weatherService";
 
 
@@ -9,20 +9,38 @@ import { WeatherService } from "../Shared/weatherService";
 export class WeatherDetailComponent implements OnInit{
     error: any;
 
-    private _cityWeatherData: Array<CityWeatherDetail>;
+    public cityWeatherData: Array<CityWeatherDetail>;
+    public showWeather: boolean = false;
+
+    @Input() selectedId: string;
+
 
     constructor(private _weatherService: WeatherService) {
 
     }
+
     ngOnInit(): void {
-        this._weatherService.getWeatherOfCityById("263897").subscribe(
+        this.getWeatherForCity("2638976");
+    }
+
+    newCitySelected(): void {
+        this.getWeatherForCity(this.selectedId);
+    }
+
+    getWeatherForCity(id:string) :void {
+        this._weatherService.getWeatherOfCityById(id).subscribe(
             data => {
-                this._cityWeatherData = data;
+                this.cityWeatherData = data;
                 console.log(data);
             },
             error => this.error = error);
-    }
+       }
 
+    millisecondsToDate(seconds: number) : string {
+        let d = new Date(seconds * 1000);
+        this.showWeather = true;
+        return d.toLocaleString();
+    }
 }
 
 

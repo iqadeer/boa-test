@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CityListComponent } from './CityList/cityList.component';
 import { WeatherService } from './Shared/weatherService';
 import { WeatherDetailComponent } from './Weather/weather-detail.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { WeatherDetailComponent } from './Weather/weather-detail.component';
 
   imports: [
       BrowserModule,
-      HttpClientModule
+      HttpClientModule,
+      FormsModule
   ],
   providers: [
       WeatherService

@@ -4,14 +4,9 @@
         <div class="form-group">
             <label for="city-list" class="col-sm-3">Please select city from the list <i class="fa fa-globe"></i></label>
             <div class="col-sm-3">
-                <select class="form-control" id="city-list" name="city-list">
-                    <option *ngFor="let city of cities" [value]="city.Id">{{city.nameOfCity}}</option>
+                <select [(ngModel)]="selectedCity" name="selectedCity" class="form-control" (change)="onSelect($event.target.value)">
+                    <option *ngFor="let city of cities" [value]="city.id">{{city.nameOfCity}}</option>
                 </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-2">
-                <button type="submit" class="btn btn-primary">Show weather</button>
             </div>
         </div>
     </form>

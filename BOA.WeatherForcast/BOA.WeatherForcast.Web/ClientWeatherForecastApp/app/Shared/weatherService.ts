@@ -38,7 +38,7 @@ export class WeatherService {
 
     getWeatherOfCityById(id: string): Observable<Array<CityWeatherDetail>> {
         return this.http.get<Array<CityWeatherDetail>>(this._serviceUrlBase + "/" + id)
-            .do(data => console.log("All: " + JSON.stringify(data)))
+            //.do(data => console.log("All: " + JSON.stringify(data)))
             .pipe(
                 retry(3),
                 catchError(this.handleError));
