@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 import { CityListComponent } from './CityList/cityList.component';
 import { WeatherDetailComponent } from './Weather/weather-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { WeatherService } from './Shared/weatherService';
+import { WeatherService } from './Shared/weather.service';
 import { HttpClientModule } from '@angular/common/http';
 
 describe('AppComponent', () => {
