@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using BOA.WeatherForcast.Web.Services;
+using BOA.WeatherForecast.Util;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -10,10 +11,10 @@ namespace BOA.WeatherForcast.Web.Controllers
     [Route("api/[Controller]")]
     public class ForecastController : Controller
     {
-        private readonly ILogger<ForecastController> _logger;
+        private readonly IWeatherAppLogger<ForecastController> _logger;
         private readonly IForecastService _forecastService;
 
-        public ForecastController(ILogger<ForecastController> logger, IForecastService forecastService)
+        public ForecastController(IWeatherAppLogger<ForecastController> logger, IForecastService forecastService)
         {
             _logger = logger;
             _forecastService = forecastService;

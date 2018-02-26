@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ClientWeatherForecastApp\app\1st.spec.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.2.2" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
@@ -16,8 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BOA.WeatherForecast.Data\BOA.WeatherForecast.Data.csproj" />
+    <ProjectReference Include="..\BOA.Weatherforecast.Data\BOA.Weatherforecast.Data.csproj" />
     <ProjectReference Include="..\BOA.WeatherForecast.Domain\BOA.WeatherForecast.Domain.csproj" />
+    <ProjectReference Include="..\BOA.WeatherForecast.Util\BOA.WeatherForecast.Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientWeatherForecastApp\app\1st.spec.ts" />
   </ItemGroup>
 
 </Project>

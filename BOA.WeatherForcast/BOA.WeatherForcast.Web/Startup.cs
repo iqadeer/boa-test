@@ -3,6 +3,7 @@ using AutoMapper;
 using BOA.WeatherForcast.Web.Services;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
+using BOA.WeatherForecast.Util;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +30,7 @@ namespace BOA.WeatherForcast.Web
             services.AddTransient<IForecastService, ForecastService>();
             services.AddTransient<HttpClient>();
             services.AddTransient<IHttpClientWrapper, HttpClientWrapper>();
+            services.AddTransient(typeof(IWeatherAppLogger<>), typeof(WeatherAppLogger<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

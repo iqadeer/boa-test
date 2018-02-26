@@ -3,6 +3,7 @@ using AutoMapper;
 using BOA.WeatherForcast.Web.ViewModels;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
+using BOA.WeatherForecast.Util;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
@@ -12,10 +13,10 @@ namespace BOA.WeatherForcast.Web.Controllers
     public class AppController : Controller
     {
         private readonly IMapper _mapper;
-        private readonly ILogger<AppController> _logger;
+        private readonly IWeatherAppLogger<AppController> _logger;
         private readonly IRepository<City> _repository;
 
-        public AppController(IMapper mapper, ILogger<AppController> logger, IRepository<City> repository)
+        public AppController(IMapper mapper, IWeatherAppLogger<AppController> logger, IRepository<City> repository)
         {
             _mapper = mapper;
             _logger = logger;

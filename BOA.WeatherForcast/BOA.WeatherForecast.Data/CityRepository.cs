@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using BOA.WeatherForecast.Data.Entities;
+using BOA.WeatherForecast.Util;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
@@ -10,9 +11,9 @@ namespace BOA.WeatherForecast.Data
 {
     public class CityRepository : IRepository<City>
     {
-        private readonly ILogger<CityRepository> _logger;
+        private readonly IWeatherAppLogger<CityRepository> _logger;
 
-        public CityRepository(ILogger<CityRepository> logger)
+        public CityRepository(IWeatherAppLogger<CityRepository> logger)
         {
             _logger = logger;
         }

@@ -40,7 +40,7 @@ export class WeatherService {
         return this.http.get<Array<CityWeatherDetail>>(this._serviceUrlBase + "/" + id)
             //.do(data => console.log("All: " + JSON.stringify(data)))
             .pipe(
-                retry(3),
+                retry(2),
                 catchError(this.handleError));
     }
 
@@ -48,7 +48,7 @@ export class WeatherService {
         return this.http.get<Array<City>>(this._serviceUrlBase)
         .do(data => console.log("All: " + JSON.stringify(data)))
             .pipe(
-                retry(3),
+                retry(2),
                 catchError(this.handleError));
     }
 

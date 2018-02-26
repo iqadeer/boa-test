@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net.Http;
 using System.Threading.Tasks;
 using AutoMapper;
 using BOA.WeatherForcast.Web.ViewModels;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 
 namespace BOA.WeatherForcast.Web.Services
@@ -42,8 +40,6 @@ namespace BOA.WeatherForcast.Web.Services
                 response.EnsureSuccessStatusCode();
                 var contentString = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<WeatherForecast.Domain.WeatherForecast>(contentString);
-
-
         }
 
         public void Dispose()
