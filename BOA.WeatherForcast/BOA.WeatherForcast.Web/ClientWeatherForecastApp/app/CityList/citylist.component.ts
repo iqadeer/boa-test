@@ -1,6 +1,6 @@
 ﻿import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { City } from "./City";
 import { WeatherService } from '../Shared/weather.service';
+import { City } from './City';
 
 @Component({
     selector: 'city-list',

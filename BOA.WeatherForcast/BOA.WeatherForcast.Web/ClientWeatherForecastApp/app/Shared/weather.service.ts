@@ -1,5 +1,5 @@
 ﻿import { Injectable } from "@angular/core";
-import { City } from "../CityList/City";
+import { ICityViewModel } from "../CityList/CityViewModel";
 import { HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {catchError, retry, map, tap, filter} from "rxjs/operators";
 import { Observable} from "rxjs/Observable";
@@ -31,7 +31,7 @@ export class WeatherService {
 
     }
 
-    public cities: Array<City> = [];
+    public cities: Array<ICityViewModel> = [];
 
     getWeatherOfCityById(id: string): Observable<Array<CityWeatherDetail>> {
         return this.http.get<Array<CityWeatherDetail>>(this._serviceUrlBase + "/" + id)
@@ -41,8 +41,8 @@ export class WeatherService {
                 catchError(this.handleError));
     }
 
-    getCities() : Observable<Array<City>> {
-        return this.http.get<Array<City>>(this._serviceUrlBase)
+    getCities(): Observable<Array<ICityViewModel>> {
+        return this.http.get<Array<ICityViewModel>>(this._serviceUrlBase)
             .pipe(
                 tap(data => console.log("All: " + JSON.stringify(data))),
                 retry(2),

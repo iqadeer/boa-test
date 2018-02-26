@@ -1,4 +1,4 @@
-﻿export interface City {
+﻿export interface ICityViewModel {
     id: string;
     nameOfCity: string;
 }
