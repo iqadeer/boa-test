@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-  title = "Five day weather forecast";
+  title = "five day weather forecast";
 }
