@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BOA.WeatherForcast.Web.Controllers;
-using BOA.WeatherForcast.Web.Services;
-using BOA.WeatherForcast.Web.ViewModels;
+using BOA.WeatherForecast.Api.Controllers;
+using BOA.WeatherForecast.Api.Services;
+using BOA.WeatherForecast.Api.ViewModels;
 using BOA.WeatherForecast.Util;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
 

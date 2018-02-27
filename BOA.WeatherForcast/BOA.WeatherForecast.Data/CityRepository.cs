@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using BOA.WeatherForecast.Data.Entities;
 using BOA.WeatherForecast.Util;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace BOA.WeatherForecast.Data

@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace BOA.WeatherForcast.Web.Services
+namespace BOA.WeatherForecast.Api.Services
 {
     public interface IHttpClientWrapper : IDisposable
     {

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using BOA.WeatherForcast.Web.ViewModels;
+using BOA.WeatherForecast.Api.ViewModels;
 using BOA.WeatherForecast.Data;
 using BOA.WeatherForecast.Data.Entities;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
-namespace BOA.WeatherForcast.Web.Services
+namespace BOA.WeatherForecast.Api.Services
 {
     public class ForecastService : IForecastService
     {
@@ -30,7 +30,7 @@ namespace BOA.WeatherForcast.Web.Services
                 return _mapper.Map<IEnumerable<City>, IEnumerable<CityViewModel>>(_repository.Get(country));
         }
 
-        public async Task<WeatherForecast.Domain.WeatherForecast> GetWeatherForecast(int id)
+        public async Task<Domain.WeatherForecast> GetWeatherForecast(int id)
         {
             var baseUrl = _configuration.GetValue<string>("WeatherServiceBaseUrl"); 
             var apiKey = _configuration.GetValue<string>("AppId"); 

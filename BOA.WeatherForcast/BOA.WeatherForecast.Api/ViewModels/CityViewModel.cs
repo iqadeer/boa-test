@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace BOA.WeatherForcast.Web.ViewModels
+namespace BOA.WeatherForecast.Api.ViewModels
 {
     public class CityViewModel
     {

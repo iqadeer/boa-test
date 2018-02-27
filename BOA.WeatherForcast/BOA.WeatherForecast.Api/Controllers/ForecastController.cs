@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Threading.Tasks;
-using BOA.WeatherForcast.Web.Services;
+using BOA.WeatherForecast.Api.Services;
 using BOA.WeatherForecast.Util;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
-namespace BOA.WeatherForcast.Web.Controllers
+namespace BOA.WeatherForecast.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/[Controller]")]
+    [EnableCors("dev")]
     public class ForecastController : Controller
     {
         private readonly IWeatherAppLogger<ForecastController> _logger;

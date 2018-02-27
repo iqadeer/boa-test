@@ -1,0 +1,11 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  },
+  "WeatherServiceBaseUrl": "http://api.openweathermap.org/data/2.5/forecast",
+  "AppId": "d958826a9d8f775f24dbeddcf2838369",
+  "Units": "metric" 
+}

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using BOA.WeatherForcast.Web.ViewModels;
+using BOA.WeatherForecast.Api.ViewModels;
 using BOA.WeatherForecast.Data.Entities;
 
-namespace BOA.WeatherForcast.Web
+namespace BOA.WeatherForecast.Api
 {
     public class MappingProfile : Profile
     {

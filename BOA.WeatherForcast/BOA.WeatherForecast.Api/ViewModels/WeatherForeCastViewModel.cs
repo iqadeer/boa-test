@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BOA.WeatherForcast.Web.ViewModels
+namespace BOA.WeatherForecast.Api.ViewModels
 {
     public class WeatherForeCastViewModel
     {

@@ -19,3 +19,6 @@ BOA.WeatherForcast/BOA.WeaterForecast.Web.Xunit.Test/
 BOA.WeatherForcast/BOA.WeatherForcast.Web/node_modules/
 BOA.WeatherForcast/BOA.WeatherForecast.Util/bin/
 BOA.WeatherForcast/BOA.WeatherForecast.Util/obj/
+BOA.WeatherForcast/BOA.WeatherForecast.Api/bin/
+BOA.WeatherForcast/BOA.WeatherForecast.Api/obj/
+BOA.WeatherForcast/BOA.WeatherForecast.Api/Data/city.list.json

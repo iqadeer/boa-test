@@ -8,7 +8,7 @@ import { CityWeatherDetail } from "../Weather/weather-detail.component";
 
 @Injectable()
 export class WeatherService {
-    readonly _serviceUrlBase: string = "/api/forecast";
+    readonly _serviceUrlBase: string = "http://localhost:8899/api/forecast";
     
     private handleError(error: HttpErrorResponse): ErrorObservable {
         if (error.error instanceof ErrorEvent) {
@@ -43,6 +43,7 @@ export class WeatherService {
 
     getCities(): Observable<Array<ICityViewModel>> {
         return this.http.get<Array<ICityViewModel>>(this._serviceUrlBase)
+//        return this.http.get<Array<ICityViewModel>>("http://localhost:8899/api/forecast")
             .pipe(
                 tap(data => console.log("All: " + JSON.stringify(data))),
                 retry(2),

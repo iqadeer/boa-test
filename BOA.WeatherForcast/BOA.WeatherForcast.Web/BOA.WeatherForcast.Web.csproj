@@ -5,6 +5,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="Services\**" />
+    <Compile Remove="ViewModels\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Models\**" />
+    <Content Remove="Services\**" />
+    <Content Remove="ViewModels\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="ViewModels\**" />
+    <None Remove="Data\**" />
+    <None Remove="Models\**" />
+    <None Remove="Services\**" />
+    <None Remove="ViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ForecastController.cs" />
+    <Compile Remove="Mappings.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ClientWeatherForecastApp\app\app.component.spec.ts" />
   </ItemGroup>
 
@@ -16,12 +40,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\BOA.Weatherforecast.Data\BOA.Weatherforecast.Data.csproj" />
-    <ProjectReference Include="..\BOA.WeatherForecast.Domain\BOA.WeatherForecast.Domain.csproj" />
     <ProjectReference Include="..\BOA.WeatherForecast.Util\BOA.WeatherForecast.Util.csproj" />
   </ItemGroup>
 

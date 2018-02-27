@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace BOA.WeatherForcast.Web.Services
+namespace BOA.WeatherForecast.Api.Services
 {
     public class HttpClientWrapper : IHttpClientWrapper
     {

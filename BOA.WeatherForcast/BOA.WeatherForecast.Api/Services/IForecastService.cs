@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BOA.WeatherForcast.Web.ViewModels;
+using BOA.WeatherForecast.Api.ViewModels;
 
-namespace BOA.WeatherForcast.Web.Services
+namespace BOA.WeatherForecast.Api.Services
 {
     public interface IForecastService : IDisposable
     {
