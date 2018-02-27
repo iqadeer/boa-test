@@ -1,6 +1,6 @@
 ﻿import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { WeatherService } from '../Shared/weather.service';
-import { City } from './City';
+import { ICityViewModel } from './CityViewModel';
 
 @Component({
     selector: 'city-list',
@@ -15,7 +15,7 @@ export class CityListComponent implements OnInit {
 
     @Output() selectionChanged = new EventEmitter<string>(); 
 
-    ngOnInit(): Array<City> {
+    ngOnInit(): Array<ICityViewModel> {
         this.service.getCities()
             .subscribe(data => {
                 this.cities = data;
@@ -46,9 +46,9 @@ export class CityListComponent implements OnInit {
     }
     title = "Five day weather forecast";
 
-    public cities: Array<City>;
+    public cities: Array<ICityViewModel>;
 
-    public getCities(): Array<City> {
+    public getCities(): Array<ICityViewModel> {
         return this.cities;
     }
 }
