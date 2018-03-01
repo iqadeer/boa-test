@@ -41,20 +41,6 @@ namespace BOA.WeatherForecast.Api.Services
                 var contentString = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<WeatherForecast.Domain.WeatherForecast>(contentString);
         }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                _client?.Dispose();
-            }
-        }
     }
 }
 

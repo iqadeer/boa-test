@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace BOA.WeatherForecast.Api.Services
 {
-    public interface IHttpClientWrapper : IDisposable
+    public interface IHttpClientWrapper
     {
         HttpResponseMessage Get(string url);
         Task<HttpResponseMessage> GetAsync(string url);

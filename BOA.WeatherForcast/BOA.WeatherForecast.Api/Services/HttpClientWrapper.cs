@@ -6,13 +6,6 @@ namespace BOA.WeatherForecast.Api.Services
 {
     public class HttpClientWrapper : IHttpClientWrapper
     {
-        private readonly HttpClient _client;
-
-        public HttpClientWrapper(HttpClient client)
-        {
-            _client = client;
-        }
-
         public HttpResponseMessage Get(string url)
         {
             return GetAsync(url).Result;
@@ -25,25 +18,17 @@ namespace BOA.WeatherForecast.Api.Services
 
         public async Task<HttpResponseMessage> GetAsync(string url)
         {
-            return await _client.GetAsync(url);
+            using (var client = new HttpClient())
+            {
+                return await client.GetAsync(url);
+            }
         }
 
         public async Task<HttpResponseMessage> PostAsync(string url, HttpContent content)
         {
-            return await _client.PostAsync(url, content);
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (disposing)
+            using (var client = new HttpClient())
             {
-                _client?.Dispose();
+                return await client.PostAsync(url, content);
             }
         }
     }

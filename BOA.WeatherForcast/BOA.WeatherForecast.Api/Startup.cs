@@ -33,7 +33,6 @@ namespace BOA.WeatherForecast.Api
 
             services.AddScoped<IRepository<City>, CityRepository>();
             services.AddTransient<IForecastService, ForecastService>();
-            services.AddTransient<HttpClient>();
             services.AddTransient<IHttpClientWrapper, HttpClientWrapper>();
             services.AddTransient(typeof(IWeatherAppLogger<>), typeof(WeatherAppLogger<>));
 

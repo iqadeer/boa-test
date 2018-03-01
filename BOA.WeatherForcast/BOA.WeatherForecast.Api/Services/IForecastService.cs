@@ -5,7 +5,7 @@ using BOA.WeatherForecast.Api.ViewModels;
 
 namespace BOA.WeatherForecast.Api.Services
 {
-    public interface IForecastService : IDisposable
+    public interface IForecastService 
     {
         IEnumerable<CityViewModel> GetCities(string country);
         Task<WeatherForecast.Domain.WeatherForecast> GetWeatherForecast(int id);
