@@ -1,9 +1,10 @@
 ﻿import { TestBed, inject, async, getTestBed, fakeAsync, tick } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { Observable } from "rxjs/Rx";
-import { City, List, CityWeatherDetail, WeatherDetailComponent } from '../Weather/weather-detail.component';
 import { WeatherService } from '../Shared/weather.service';
 import { defer } from 'rxjs/observable/defer';
+import { WeatherDetailComponent } from './weather-detail.component';
+import { CityWeatherDetail } from './CityWeatherDetail';
 
 
 export function asyncData<T>(data: T) {

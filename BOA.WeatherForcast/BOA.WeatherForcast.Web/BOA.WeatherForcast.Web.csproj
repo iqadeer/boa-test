@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <None Remove="ClientWeatherForecastApp\app\app.component.spec.ts" />
+    <None Remove="ClientWeatherForecastApp\app\Weather\CityWeatherDetail.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +46,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientWeatherForecastApp\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="ClientWeatherForecastApp\app\Weather\CityWeatherDetail.ts" />
   </ItemGroup>
 
 </Project>

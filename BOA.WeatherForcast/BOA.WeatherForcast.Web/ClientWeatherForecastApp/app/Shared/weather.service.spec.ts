@@ -4,7 +4,7 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ErrorObservable } from "rxjs/observable/ErrorObservable";
 import { ICityViewModel } from '../CityList/CityViewModel';
-import { City, List, CityWeatherDetail } from '../Weather/weather-detail.component';
+import { City, List, CityWeatherDetail } from '../Weather/CityWeatherDetail';
 
 describe('WeatherService', () => {
 

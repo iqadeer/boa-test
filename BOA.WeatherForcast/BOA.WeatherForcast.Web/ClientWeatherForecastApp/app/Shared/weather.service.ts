@@ -4,7 +4,7 @@ import { HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {catchError, retry, map, tap, filter} from "rxjs/operators";
 import { Observable} from "rxjs/Observable";
 import { ErrorObservable } from "rxjs/observable/ErrorObservable";
-import { CityWeatherDetail } from "../Weather/weather-detail.component";
+import { CityWeatherDetail } from "../Weather/CityWeatherDetail";
 
 @Injectable()
 export class WeatherService {
@@ -43,7 +43,6 @@ export class WeatherService {
 
     getCities(): Observable<Array<ICityViewModel>> {
         return this.http.get<Array<ICityViewModel>>(this._serviceUrlBase)
-//        return this.http.get<Array<ICityViewModel>>("http://localhost:8899/api/forecast")
             .pipe(
                 tap(data => console.log("All: " + JSON.stringify(data))),
                 retry(2),
